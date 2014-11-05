@@ -1,0 +1,19 @@
+<head>
+	<title> Leaderboard </title>
+</head>
+
+<body>
+	<h1> Leaderboard </h1>
+	{{> leaderboard}}
+</body>
+
+<template name="leaderboard">
+
+	<h2> There are {{playerCount}} players </h2>
+	{{#each player}}
+		<li class='player'> {{name}} : {{score}} </li>
+	{{/each}}
+	
+</template>
+
+
